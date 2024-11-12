@@ -9,6 +9,7 @@ import GameController
 struct ChatView: View {
     @EnvironmentObject private var chatState: ChatState
     @Environment(\.scenePhase) var scenePhase
+    @Environment(\.managedObjectContext) private var context
     @State private var inputMessage: String = ""
     @FocusState private var inputIsFocused: Bool
     @Environment(\.dismiss) private var dismiss
@@ -20,15 +21,21 @@ struct ChatView: View {
     @State private var imageConfirmed: Bool = false
     @State private var imageSourceType: UIImagePickerController.SourceType = .photoLibrary
     @State private var image: UIImage?
+    
+    //Handle History
+//  private var threadId: String = getCurrentTimestampString()
+    @State private var lastAnswer: String = ""
 
     var body: some View {
         VStack {
+            navbarView
             modelInfoView
             messagesView
             uploadImageView
             messageInputView
         }
-        .navigationBarTitle("MLC Chat: \(chatState.displayName)", displayMode: .inline)
+        .navigationBarTitle("solo: \(chatState.displayName)", displayMode: .inline)
+        .background(Color.black.edgesIgnoringSafeArea(.all))
         .navigationBarBackButtonHidden()
         .onChange(of: scenePhase) { oldPhase, newPhase in
             if newPhase == .background {
@@ -40,7 +47,7 @@ struct ChatView: View {
                 Button {
                     dismiss()
                 } label: {
-                    Image(systemName: "chevron.backward")
+                    Image(.icBack)
                 }
                 .buttonStyle(.borderless)
                 .disabled(!chatState.isInterruptible)
@@ -55,6 +62,7 @@ struct ChatView: View {
                 .disabled(!chatState.isResettable)
             }
         }
+        .toolbar(.hidden, for: .navigationBar)
 
     }
 }
@@ -150,12 +158,16 @@ private extension ChatView {
             }
         }
     }
-
+    
     var messageInputView: some View {
         HStack {
-            TextField("Inputs...", text: $inputMessage, axis: .vertical)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .frame(minHeight: CGFloat(30))
+//            Spacer().frame(width: 16)
+            HStack {
+                TextField("", text: $inputMessage, prompt: Text("Ask Anything...").foregroundColor(.white)
+                    .font(.custom("SpaceGrotesk-Regular", size: 16)))
+                .font(.custom("SpaceGrotesk-Regular", size: 16))
+                .foregroundColor(.white)
+                .padding(.leading, 10)
                 .focused($inputIsFocused)
                 .onSubmit {
                     let isKeyboardConnected = GCKeyboard.coalesced != nil
@@ -163,19 +175,70 @@ private extension ChatView {
                         send()
                     }
                 }
-            Button("Send") {
-                send()
+                Button(action: {
+                    send()
+                }) {
+                    Image(.icSend)
+                        .resizable()
+                        .frame(width: 32, height: 32)
+                        .padding(.trailing, 10) // Adjusted right padding
+                }
             }
-            .bold()
-            .disabled(!(chatState.isChattable && inputMessage != ""))
+            .padding(.horizontal, 10) // Added horizontal padding to the HStack
+            .padding(.vertical, 10) // Consistent vertical padding
+            .background(Color(._333331))
+            .clipShape(.capsule)
+            .padding(.bottom, 10)
+            Spacer().frame(width: 16)
         }
-        .frame(minHeight: CGFloat(70))
-        .padding()
     }
+        var navbarView: some View {
+            // Top bar with avatar, title, and share button
+            HStack {
+                // Profile image as a back button
+                Button(action: {
+                    dismiss() // Navigate back to the previous view
+                }) {
+                    Image(.icBack)
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .padding(.leading)
+                }
+                .disabled(!chatState.isInterruptible)
+                
+                Spacer()
 
+                Text("solo")
+                    .font(.custom("SpaceGrotesk-Regular", size: 24))
+                    .foregroundColor(.white)
+                
+                Spacer()
+                
+                Button(action: {
+                    image = nil
+                    imageConfirmed = false
+                    chatState.requestResetChat()
+                }) {
+                    Image(.icReset)
+                        .resizable()
+                        .frame(width: 25, height: 25)
+                        .padding(.trailing)
+                }
+                .disabled(!chatState.isResettable)
+            }
+            .padding(.top, 20)
+            .background(Color.black)
+        }
+    
     func send() {
         inputIsFocused = false
         chatState.requestGenerate(prompt: inputMessage)
+//        DispatchQueue.main.async {
+//            if let lastMessage = chatState.displayMessages.last?.message, lastMessage != inputMessage, !lastMessage.isEmpty  {
+//                lastAnswer = lastMessage
+//            }
+//
+//        }
         inputMessage = ""
     }
 }

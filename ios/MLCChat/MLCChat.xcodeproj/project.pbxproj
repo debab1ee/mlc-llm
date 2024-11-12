@@ -12,6 +12,25 @@
 		1453A4D12A1354B9001B909F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453A4CC2A1354B9001B909F /* AppState.swift */; };
 		1453A4D22A1354B9001B909F /* ModelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453A4CD2A1354B9001B909F /* ModelConfig.swift */; };
 		1453A4D32A1354B9001B909F /* ModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453A4CE2A1354B9001B909F /* ModelState.swift */; };
+		1EEA11D32CE3118D008CB42F /* LoaderUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1EEA11D22CE3118D008CB42F /* LoaderUI */; };
+		1EEA11D62CE311A2008CB42F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1EEA11D52CE311A2008CB42F /* Alamofire */; };
+		1EEA11D92CE311B4008CB42F /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 1EEA11D82CE311B4008CB42F /* SVProgressHUD */; };
+		1EEA11E02CE31242008CB42F /* SpaceGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EEA11DC2CE31242008CB42F /* SpaceGrotesk-Medium.ttf */; };
+		1EEA11E12CE31242008CB42F /* SpaceGrotesk-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EEA11DD2CE31242008CB42F /* SpaceGrotesk-Regular.ttf */; };
+		1EEA11E22CE31242008CB42F /* SpaceGrotesk-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EEA11DB2CE31242008CB42F /* SpaceGrotesk-Light.ttf */; };
+		1EEA11E32CE31242008CB42F /* SpaceGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EEA11DA2CE31242008CB42F /* SpaceGrotesk-Bold.ttf */; };
+		1EEA11E42CE31242008CB42F /* SpaceGrotesk-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EEA11DE2CE31242008CB42F /* SpaceGrotesk-SemiBold.ttf */; };
+		1EEA11E62CE3125E008CB42F /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA11E52CE3125E008CB42F /* ChatModel.swift */; };
+		1EEA11E82CE31293008CB42F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA11E72CE31293008CB42F /* Global.swift */; };
+		1EEA11EA2CE312D1008CB42F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA11E92CE312CC008CB42F /* APIManager.swift */; };
+		1EEA11EC2CE312FD008CB42F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA11EB2CE312F6008CB42F /* CoreDataManager.swift */; };
+		1EEA11F02CE3134D008CB42F /* OnlineChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA11EF2CE3134D008CB42F /* OnlineChatViewModel.swift */; };
+		1EEA11F22CE31367008CB42F /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA11F12CE31367008CB42F /* HistoryViewModel.swift */; };
+		1EEA11F42CE31409008CB42F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA11F32CE31409008CB42F /* HomeView.swift */; };
+		1EEA11F62CE3141E008CB42F /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA11F52CE3141E008CB42F /* HelpView.swift */; };
+		1EEA11F82CE31436008CB42F /* ThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA11F72CE31436008CB42F /* ThreadView.swift */; };
+		1EEA11FA2CE3144B008CB42F /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA11F92CE3144B008CB42F /* HistoryView.swift */; };
+		1EEA11FD2CE316FC008CB42F /* ChatHistory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EEA11FB2CE316FC008CB42F /* ChatHistory.xcdatamodeld */; };
 		A773CC652A5DC98200467BFE /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A773CC642A5DC98200467BFE /* ImageProcessing.swift */; };
 		AEC27EFA2A85C2AC00254E67 /* ParamsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC27EF92A85C2AC00254E67 /* ParamsConfig.swift */; };
 		AEC27EFC2A85C3B000254E67 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC27EFB2A85C3B000254E67 /* AppConfig.swift */; };
@@ -56,6 +75,22 @@
 		1453A4CC2A1354B9001B909F /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		1453A4CD2A1354B9001B909F /* ModelConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelConfig.swift; sourceTree = "<group>"; };
 		1453A4CE2A1354B9001B909F /* ModelState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelState.swift; sourceTree = "<group>"; };
+		1EEA11DA2CE31242008CB42F /* SpaceGrotesk-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Bold.ttf"; sourceTree = "<group>"; };
+		1EEA11DB2CE31242008CB42F /* SpaceGrotesk-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Light.ttf"; sourceTree = "<group>"; };
+		1EEA11DC2CE31242008CB42F /* SpaceGrotesk-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Medium.ttf"; sourceTree = "<group>"; };
+		1EEA11DD2CE31242008CB42F /* SpaceGrotesk-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Regular.ttf"; sourceTree = "<group>"; };
+		1EEA11DE2CE31242008CB42F /* SpaceGrotesk-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-SemiBold.ttf"; sourceTree = "<group>"; };
+		1EEA11E52CE3125E008CB42F /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		1EEA11E72CE31293008CB42F /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		1EEA11E92CE312CC008CB42F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		1EEA11EB2CE312F6008CB42F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		1EEA11EF2CE3134D008CB42F /* OnlineChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineChatViewModel.swift; sourceTree = "<group>"; };
+		1EEA11F12CE31367008CB42F /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		1EEA11F32CE31409008CB42F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1EEA11F52CE3141E008CB42F /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		1EEA11F72CE31436008CB42F /* ThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadView.swift; sourceTree = "<group>"; };
+		1EEA11F92CE3144B008CB42F /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		1EEA11FC2CE316FC008CB42F /* ChatHistory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatHistory.xcdatamodel; sourceTree = "<group>"; };
 		A773CC642A5DC98200467BFE /* ImageProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessing.swift; sourceTree = "<group>"; };
 		AEC27EF92A85C2AC00254E67 /* ParamsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamsConfig.swift; sourceTree = "<group>"; };
 		AEC27EFB2A85C3B000254E67 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
@@ -78,6 +113,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C04105DD2BEBBEA6005A434D /* MLCSwift in Frameworks */,
+				1EEA11D92CE311B4008CB42F /* SVProgressHUD in Frameworks */,
+				1EEA11D62CE311A2008CB42F /* Alamofire in Frameworks */,
+				1EEA11D32CE3118D008CB42F /* LoaderUI in Frameworks */,
 				B08647022C6D0293001A8B5E /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,9 +123,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EEA11DF2CE31242008CB42F /* MyFonts */ = {
+			isa = PBXGroup;
+			children = (
+				1EEA11DA2CE31242008CB42F /* SpaceGrotesk-Bold.ttf */,
+				1EEA11DB2CE31242008CB42F /* SpaceGrotesk-Light.ttf */,
+				1EEA11DC2CE31242008CB42F /* SpaceGrotesk-Medium.ttf */,
+				1EEA11DD2CE31242008CB42F /* SpaceGrotesk-Regular.ttf */,
+				1EEA11DE2CE31242008CB42F /* SpaceGrotesk-SemiBold.ttf */,
+			);
+			path = MyFonts;
+			sourceTree = "<group>";
+		};
+		1EEA11EE2CE3132F008CB42F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1EEA11F12CE31367008CB42F /* HistoryViewModel.swift */,
+				1EEA11EF2CE3134D008CB42F /* OnlineChatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		AEC27EF82A85C29000254E67 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1EEA11E52CE3125E008CB42F /* ChatModel.swift */,
 				1453A4CD2A1354B9001B909F /* ModelConfig.swift */,
 				AEC27EF92A85C2AC00254E67 /* ParamsConfig.swift */,
 				AEC27EFB2A85C3B000254E67 /* AppConfig.swift */,
@@ -108,6 +168,10 @@
 		AEC27F002A86306800254E67 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1EEA11F92CE3144B008CB42F /* HistoryView.swift */,
+				1EEA11F72CE31436008CB42F /* ThreadView.swift */,
+				1EEA11F52CE3141E008CB42F /* HelpView.swift */,
+				1EEA11F32CE31409008CB42F /* HomeView.swift */,
 				A773CC642A5DC98200467BFE /* ImageProcessing.swift */,
 				1453A4CB2A1354B9001B909F /* ModelView.swift */,
 				1453A4CA2A1354B9001B909F /* StartView.swift */,
@@ -120,7 +184,11 @@
 		AEC27F032A86338800254E67 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1EEA11DF2CE31242008CB42F /* MyFonts */,
 				AEC27F012A86337E00254E67 /* Constants.swift */,
+				1EEA11E72CE31293008CB42F /* Global.swift */,
+				1EEA11E92CE312CC008CB42F /* APIManager.swift */,
+				1EEA11EB2CE312F6008CB42F /* CoreDataManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -147,6 +215,7 @@
 		C0D643B129F99A7F004DDAA4 /* MLCChat */ = {
 			isa = PBXGroup;
 			children = (
+				1EEA11EE2CE3132F008CB42F /* ViewModels */,
 				AEC27F032A86338800254E67 /* Common */,
 				AEC27EF82A85C29000254E67 /* Models */,
 				AEC27EFF2A85EE2800254E67 /* States */,
@@ -155,6 +224,7 @@
 				C0D643B229F99A7F004DDAA4 /* MLCChatApp.swift */,
 				C0D643B629F99A80004DDAA4 /* Assets.xcassets */,
 				C0D643B829F99A80004DDAA4 /* Preview Content */,
+				1EEA11FB2CE316FC008CB42F /* ChatHistory.xcdatamodeld */,
 			);
 			path = MLCChat;
 			sourceTree = "<group>";
@@ -203,6 +273,9 @@
 			packageProductDependencies = (
 				C04105DC2BEBBEA6005A434D /* MLCSwift */,
 				B08647012C6D0293001A8B5E /* MarkdownUI */,
+				1EEA11D22CE3118D008CB42F /* LoaderUI */,
+				1EEA11D52CE311A2008CB42F /* Alamofire */,
+				1EEA11D82CE311B4008CB42F /* SVProgressHUD */,
 			);
 			productName = MLCChat;
 			productReference = C0D643AF29F99A7F004DDAA4 /* MLCChat.app */;
@@ -236,6 +309,9 @@
 			packageReferences = (
 				C04105DB2BEBBEA6005A434D /* XCLocalSwiftPackageReference "../MLCSwift" */,
 				B08647002C6D0293001A8B5E /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				1EEA11D12CE3118C008CB42F /* XCRemoteSwiftPackageReference "LoaderUI" */,
+				1EEA11D42CE311A2008CB42F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1EEA11D72CE311B4008CB42F /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
 			);
 			productRefGroup = C0D643B029F99A7F004DDAA4 /* Products */;
 			projectDirPath = "";
@@ -252,6 +328,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0D643BA29F99A80004DDAA4 /* Preview Assets.xcassets in Resources */,
+				1EEA11E02CE31242008CB42F /* SpaceGrotesk-Medium.ttf in Resources */,
+				1EEA11E12CE31242008CB42F /* SpaceGrotesk-Regular.ttf in Resources */,
+				1EEA11E22CE31242008CB42F /* SpaceGrotesk-Light.ttf in Resources */,
+				1EEA11E32CE31242008CB42F /* SpaceGrotesk-Bold.ttf in Resources */,
+				1EEA11E42CE31242008CB42F /* SpaceGrotesk-SemiBold.ttf in Resources */,
 				C0D643B729F99A80004DDAA4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,15 +344,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EEA11EA2CE312D1008CB42F /* APIManager.swift in Sources */,
+				1EEA11F02CE3134D008CB42F /* OnlineChatViewModel.swift in Sources */,
 				A773CC652A5DC98200467BFE /* ImageProcessing.swift in Sources */,
 				1453A4D12A1354B9001B909F /* AppState.swift in Sources */,
 				C0D643B329F99A7F004DDAA4 /* MLCChatApp.swift in Sources */,
+				1EEA11F22CE31367008CB42F /* HistoryViewModel.swift in Sources */,
+				1EEA11FA2CE3144B008CB42F /* HistoryView.swift in Sources */,
+				1EEA11EC2CE312FD008CB42F /* CoreDataManager.swift in Sources */,
+				1EEA11E62CE3125E008CB42F /* ChatModel.swift in Sources */,
 				C0DDBDF62A39103F00E9D060 /* ChatState.swift in Sources */,
 				C0D643C429F99B07004DDAA4 /* ChatView.swift in Sources */,
+				1EEA11F62CE3141E008CB42F /* HelpView.swift in Sources */,
 				1453A4D32A1354B9001B909F /* ModelState.swift in Sources */,
+				1EEA11F82CE31436008CB42F /* ThreadView.swift in Sources */,
 				C0D643C829F99B34004DDAA4 /* MessageView.swift in Sources */,
 				1453A4D22A1354B9001B909F /* ModelConfig.swift in Sources */,
+				1EEA11F42CE31409008CB42F /* HomeView.swift in Sources */,
 				AEC27EFA2A85C2AC00254E67 /* ParamsConfig.swift in Sources */,
+				1EEA11FD2CE316FC008CB42F /* ChatHistory.xcdatamodeld in Sources */,
+				1EEA11E82CE31293008CB42F /* Global.swift in Sources */,
 				AEC27EFC2A85C3B000254E67 /* AppConfig.swift in Sources */,
 				AEC27F022A86337E00254E67 /* Constants.swift in Sources */,
 				1453A4D02A1354B9001B909F /* ModelView.swift in Sources */,
@@ -405,18 +497,18 @@
 				CODE_SIGN_ENTITLEMENTS = MLCChat/MLCChat.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"MLCChat/Preview Content\"";
-				DEVELOPMENT_TEAM = 3FR42MXLK9;
+				DEVELOPMENT_TEAM = 3R3TM3V34F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"HEADER_SEARCH_PATHS[arch=*]" = "";
 				INFOPLIST_FILE = MLCChat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Solo MLC";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires usage of camera to function properly.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -438,7 +530,7 @@
 					"-lsentencepiece",
 					"-ltokenizers_c",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mlc.Chat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sst.mlcchattest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -458,18 +550,18 @@
 				CODE_SIGN_ENTITLEMENTS = MLCChat/MLCChat.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"MLCChat/Preview Content\"";
-				DEVELOPMENT_TEAM = 3FR42MXLK9;
+				DEVELOPMENT_TEAM = 3R3TM3V34F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"HEADER_SEARCH_PATHS[arch=*]" = "";
 				INFOPLIST_FILE = MLCChat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Solo MLC";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires usage of camera to function properly.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -491,7 +583,7 @@
 					"-lsentencepiece",
 					"-ltokenizers_c",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mlc.Chat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sst.mlcchattest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -532,6 +624,30 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1EEA11D12CE3118C008CB42F /* XCRemoteSwiftPackageReference "LoaderUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/LoaderUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+		1EEA11D42CE311A2008CB42F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+		1EEA11D72CE311B4008CB42F /* XCRemoteSwiftPackageReference "SVProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVProgressHUD/SVProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
 		B08647002C6D0293001A8B5E /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
@@ -543,6 +659,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1EEA11D22CE3118D008CB42F /* LoaderUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EEA11D12CE3118C008CB42F /* XCRemoteSwiftPackageReference "LoaderUI" */;
+			productName = LoaderUI;
+		};
+		1EEA11D52CE311A2008CB42F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EEA11D42CE311A2008CB42F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1EEA11D82CE311B4008CB42F /* SVProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EEA11D72CE311B4008CB42F /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
+			productName = SVProgressHUD;
+		};
 		B08647012C6D0293001A8B5E /* MarkdownUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B08647002C6D0293001A8B5E /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
@@ -553,6 +684,19 @@
 			productName = MLCSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		1EEA11FB2CE316FC008CB42F /* ChatHistory.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1EEA11FC2CE316FC008CB42F /* ChatHistory.xcdatamodel */,
+			);
+			currentVersion = 1EEA11FC2CE316FC008CB42F /* ChatHistory.xcdatamodel */;
+			path = ChatHistory.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C0D643A729F99A7F004DDAA4 /* Project object */;
 }

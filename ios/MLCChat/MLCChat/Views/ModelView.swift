@@ -25,11 +25,12 @@ struct ModelView: View {
                     }
                 ) {
                     HStack {
-                        Text(modelState.modelConfig.modelID!)
+//                        Text(modelState.modelConfig.modelID!)
+                        Text("Go To Chat")
                         Spacer()
-                        if chatState.isCurrentModel(modelID: modelState.modelConfig.modelID!) {
-                            Image(systemName: "checkmark").foregroundColor(.blue)
-                        }
+//                        if chatState.isCurrentModel(modelID: modelState.modelConfig.modelID!) {
+//                            Image(systemName: "checkmark").foregroundColor(.blue)
+//                        }
                     }
                 }
                 .buttonStyle(.borderless)

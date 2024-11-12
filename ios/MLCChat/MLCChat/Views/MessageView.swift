@@ -21,13 +21,14 @@ struct MessageView: View {
     }
     var body: some View {
         let textColor = role.isUser ? Color.white : Color(UIColor.label)
-        let background = role.isUser ? Color.blue : Color(UIColor.secondarySystemBackground)
+        let background = role.isUser ? Color(._20_C_20_E) : Color(UIColor.secondarySystemBackground)
         
         HStack {
             if role.isUser {
                 Spacer()
                 Text(message)
                     .padding(10)
+                    .font(.custom("SpaceGrotesk-Regular", size: 16))
                     .foregroundColor(textColor)
                     .background(background)
                     .cornerRadius(10)
@@ -39,10 +40,11 @@ struct MessageView: View {
                     if(isMarkdownSupported){
                         Toggle(isOn: $showMarkdown) {
                             Text("Show as Markdown")
-                                .font(.footnote)
-                                .foregroundColor(.blue)
+                                .font(.custom("SpaceGrotesk-Medium", size: 12))
+                                .foregroundStyle(Color(._20_C_20_E))
                         }
                         .padding(.bottom, 10)
+                        .tint(Color(._20_C_20_E))
                     }
                     
                     // Conditionally display Text or Markdown
@@ -52,6 +54,7 @@ struct MessageView: View {
                         }
                         .markdownTheme(.gitHub)
                         .padding(10)
+                        .font(.custom("SpaceGrotesk-Regular", size: 16))
                         .foregroundColor(textColor)
                         .background(background)
                         .cornerRadius(10)
@@ -59,6 +62,7 @@ struct MessageView: View {
                     } else {
                         Text(message)
                             .padding(10)
+                            .font(.custom("SpaceGrotesk-Regular", size: 16))
                             .foregroundColor(textColor)
                             .background(background)
                             .cornerRadius(10)
@@ -92,16 +96,16 @@ struct ImageView: View {
     }
 }
 
-struct MessageView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            VStack (spacing: 0){
-                ScrollView {
-                    MessageView(role: MessageRole.user, message: "Message 1")
-                    MessageView(role: MessageRole.assistant, message: "Message 2")
-                    MessageView(role: MessageRole.user, message: "Message 3")
-                }
-            }
-        }
-    }
-}
+//struct MessageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NavigationView {
+//            VStack (spacing: 0){
+//                ScrollView {
+//                    MessageView(role: MessageRole.user, message: "Message 1")
+//                    MessageView(role: MessageRole.assistant, message: "Message 2")
+//                    MessageView(role: MessageRole.user, message: "Message 3")
+//                }
+//            }
+//        }
+//    }
+//}
