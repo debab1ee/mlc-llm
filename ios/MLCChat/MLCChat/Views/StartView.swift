@@ -17,6 +17,7 @@ struct StartView: View {
     @State private var isOfflineVersion: Bool = false // Toggle for offline version
     @State private var navigateToHelp: Bool = false // State to control navigation to HelpView
     @State private var navigateToHistory: Bool = false
+    @State private var navigateToOfflineHistory: Bool = false
 
     var body: some View {
         NavigationStack {
@@ -78,7 +79,14 @@ struct StartView: View {
                     .padding()
                 }
                 Button("Chat History") {
-                    navigateToHistory = true // Trigger navigation to HelpView
+                    if isOfflineVersion {
+                        navigateToOfflineHistory = true
+                        navigateToHistory = false
+                    } else {
+                        navigateToOfflineHistory = false
+                        navigateToHistory = true
+                    }
+                    
                 }
                 .buttonStyle(.borderless)
                 .font(.custom("SpaceGrotesk-Medium", size: 16))
@@ -155,7 +163,10 @@ struct StartView: View {
                 HelpView() // Navigate to HelpView when navigateToHelp is true
             }
             .navigationDestination(isPresented: $navigateToHistory) {
-                HistoryView(context: context) // Navigate to HistoryView when navigateToHelp is true
+                HistoryView(context: context)
+            }
+            .navigationDestination(isPresented: $navigateToOfflineHistory) {
+                OfflineHistoryView(context: context)
             }
             .alert("Error", isPresented: $appState.alertDisplayed) {
                 Button("OK") { }

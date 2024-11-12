@@ -12,6 +12,8 @@
 		1453A4D12A1354B9001B909F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453A4CC2A1354B9001B909F /* AppState.swift */; };
 		1453A4D22A1354B9001B909F /* ModelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453A4CD2A1354B9001B909F /* ModelConfig.swift */; };
 		1453A4D32A1354B9001B909F /* ModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1453A4CE2A1354B9001B909F /* ModelState.swift */; };
+		1E9893692CE3312D00F99F36 /* OfflineHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9893682CE3311D00F99F36 /* OfflineHistoryView.swift */; };
+		1E98936B2CE3314000F99F36 /* OfflineHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E98936A2CE3313300F99F36 /* OfflineHistoryViewModel.swift */; };
 		1EEA11D32CE3118D008CB42F /* LoaderUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1EEA11D22CE3118D008CB42F /* LoaderUI */; };
 		1EEA11D62CE311A2008CB42F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1EEA11D52CE311A2008CB42F /* Alamofire */; };
 		1EEA11D92CE311B4008CB42F /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 1EEA11D82CE311B4008CB42F /* SVProgressHUD */; };
@@ -75,6 +77,8 @@
 		1453A4CC2A1354B9001B909F /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		1453A4CD2A1354B9001B909F /* ModelConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelConfig.swift; sourceTree = "<group>"; };
 		1453A4CE2A1354B9001B909F /* ModelState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelState.swift; sourceTree = "<group>"; };
+		1E9893682CE3311D00F99F36 /* OfflineHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineHistoryView.swift; sourceTree = "<group>"; };
+		1E98936A2CE3313300F99F36 /* OfflineHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineHistoryViewModel.swift; sourceTree = "<group>"; };
 		1EEA11DA2CE31242008CB42F /* SpaceGrotesk-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Bold.ttf"; sourceTree = "<group>"; };
 		1EEA11DB2CE31242008CB42F /* SpaceGrotesk-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Light.ttf"; sourceTree = "<group>"; };
 		1EEA11DC2CE31242008CB42F /* SpaceGrotesk-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Medium.ttf"; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 		1EEA11EE2CE3132F008CB42F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				1E98936A2CE3313300F99F36 /* OfflineHistoryViewModel.swift */,
 				1EEA11F12CE31367008CB42F /* HistoryViewModel.swift */,
 				1EEA11EF2CE3134D008CB42F /* OnlineChatViewModel.swift */,
 			);
@@ -168,6 +173,7 @@
 		AEC27F002A86306800254E67 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1E9893682CE3311D00F99F36 /* OfflineHistoryView.swift */,
 				1EEA11F92CE3144B008CB42F /* HistoryView.swift */,
 				1EEA11F72CE31436008CB42F /* ThreadView.swift */,
 				1EEA11F52CE3141E008CB42F /* HelpView.swift */,
@@ -355,6 +361,7 @@
 				1EEA11E62CE3125E008CB42F /* ChatModel.swift in Sources */,
 				C0DDBDF62A39103F00E9D060 /* ChatState.swift in Sources */,
 				C0D643C429F99B07004DDAA4 /* ChatView.swift in Sources */,
+				1E9893692CE3312D00F99F36 /* OfflineHistoryView.swift in Sources */,
 				1EEA11F62CE3141E008CB42F /* HelpView.swift in Sources */,
 				1453A4D32A1354B9001B909F /* ModelState.swift in Sources */,
 				1EEA11F82CE31436008CB42F /* ThreadView.swift in Sources */,
@@ -366,6 +373,7 @@
 				1EEA11E82CE31293008CB42F /* Global.swift in Sources */,
 				AEC27EFC2A85C3B000254E67 /* AppConfig.swift in Sources */,
 				AEC27F022A86337E00254E67 /* Constants.swift in Sources */,
+				1E98936B2CE3314000F99F36 /* OfflineHistoryViewModel.swift in Sources */,
 				1453A4D02A1354B9001B909F /* ModelView.swift in Sources */,
 				1453A4CF2A1354B9001B909F /* StartView.swift in Sources */,
 			);

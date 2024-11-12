@@ -14,7 +14,7 @@ struct RequiredFormOfData: Hashable {
 }
 struct RequiredFormOfOfflineData: Hashable {
     let date: Date
-    let groupedItemByThread: [[OfflineHistory]]
+    let groupedItemByThreadOffline: [[OfflineHistory]]
 }
 class CoreDataManager {
     
@@ -131,7 +131,7 @@ class CoreDataManager {
                 histories.sorted(by: { $0.date ?? Date() < $1.date ?? Date() })
             }.sorted(by: { $0.first?.date ?? Date() < $1.first?.date ?? Date() })
             
-            let requiredData = RequiredFormOfOfflineData(date: date, groupedItemByThread: sortedGroupedItemByThread)
+            let requiredData = RequiredFormOfOfflineData(date: date, groupedItemByThreadOffline: sortedGroupedItemByThread)
             result.append(requiredData)
         }
         
